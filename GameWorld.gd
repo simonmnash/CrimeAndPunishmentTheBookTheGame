@@ -6,4 +6,4 @@ func _ready():
 
 func start_game_loss():
 	#Placeholder for loss screen/restart
-	print("Game Loss")
+	get_tree().change_scene("res://LoseScreen.tscn")
