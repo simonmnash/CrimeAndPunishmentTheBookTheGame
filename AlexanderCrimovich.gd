@@ -1,6 +1,6 @@
-extends Area2D
+extends KinematicBody2D
 
-export var speed = 16;
+export var speed = 0.3;
 
 var center = Vector2(128,128)
 
@@ -14,13 +14,13 @@ func _process(delta):
 	var velocity = Vector2()
 
 	if Input.is_action_pressed("up"):
-		velocity.y -= 1 
+		velocity.y = -1 
 	if Input.is_action_pressed("down"):
-		velocity.y += 1
+		velocity.y = 1
 	if Input.is_action_pressed("left"):
-		velocity.x -= 1
+		velocity.x = -1
 	if Input.is_action_pressed("right"):
-		velocity.x +=1
+		velocity.x = 1
 	
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
@@ -28,7 +28,5 @@ func _process(delta):
 	else:
 		$AnimatedSprite.stop()
 		
-	position += velocity * delta
-	
-	
-		
+	#position += velocity
+	move_and_collide(velocity, false)

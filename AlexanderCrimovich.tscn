@@ -15,9 +15,8 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 16, 16 )
 
-[node name="AlexanderCrimovich" type="Area2D"]
+[node name="AlexanderCrimovich" type="KinematicBody2D"]
 script = ExtResource( 1 )
-speed = 100
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 2, 2 )
@@ -25,5 +24,6 @@ frames = SubResource( 1 )
 animation = "axe_walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 0.720001, 0.709155 )
 shape = SubResource( 2 )
 
