@@ -50,7 +50,7 @@ func _process(delta):
 	# Otherwise, move the character back so they aren't colliding anymore,
 	# and set dashing to false.
 	else:
-		move_and_collide(-velocity, false)
+		move_and_collide(-velocity.normalized(), false)
 		self.dashing = false
 		$AnimatedSprite.rotation=0
 		$BloodSpray.hide()
