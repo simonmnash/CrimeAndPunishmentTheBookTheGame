@@ -27,12 +27,7 @@ speed = 0.7
 [node name="Camera2D" parent="." instance=ExtResource( 4 )]
 position = Vector2( -5.57904, 131.107 )
 
-<<<<<<< HEAD
 [node name="Furniture" parent="." instance=ExtResource( 5 )]
-position = Vector2( 211.298, 125.984 )
-=======
-[node name="Furniture" parent="." instance=ExtResource( 6 )]
->>>>>>> luke-dev
 tile_data = PoolIntArray( 262144, 0, 0 )
 
 [node name="City" parent="." instance=ExtResource( 6 )]
