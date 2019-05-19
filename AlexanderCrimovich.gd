@@ -57,3 +57,11 @@ func _process(delta):
 		self.dashing = false
 		$AnimatedSprite.rotation=0
 		$BloodSpray.hide()
+	
+	
+	#Change animation based on distance
+	if position.x > 1600 and $AnimatedSprite.animation == "axe_walk":
+		$AnimatedSprite.play("axelegs_walk")
+		
+	if position.x > 3200 and $AnimatedSprite.animation == "axelegs_walk":
+		$AnimatedSprite.play("alex_walk")

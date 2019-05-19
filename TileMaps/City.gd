@@ -10,6 +10,7 @@ func _ready():
 		for i in range(100,200):
 			for j in range(-20,30):
 				# Most tiles shouldn't be furniture.
-				if round(rand_range(0.0, 0.51)) > 0:
-					set_cell(i, j, randi()%8)
+				randomize()
+				if round(rand_range(0.0, (0.52 - ((i-100)*0.000025)))) > 0:
+					set_cell(i, j, randi()%11)
 				

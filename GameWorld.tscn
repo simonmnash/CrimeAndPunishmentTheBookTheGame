@@ -38,7 +38,6 @@ position = Vector2( 631.405, 62.6376 )
 position = Vector2( -5.57904, 131.107 )
 
 [node name="Furniture" parent="." instance=ExtResource( 6 )]
-position = Vector2( 211.298, 125.984 )
 tile_data = PoolIntArray( 262144, 0, 0 )
 
 [node name="City" parent="." instance=ExtResource( 7 )]
