@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://GameWorld.gd" type="Script" id=1]
 [ext_resource path="res://TileMaps/Floor.tscn" type="PackedScene" id=2]
@@ -7,6 +7,13 @@
 [ext_resource path="res://MainCamera.tscn" type="PackedScene" id=5]
 [ext_resource path="res://TileMaps/Furniture.tscn" type="PackedScene" id=6]
 [ext_resource path="res://TileMaps/City.tscn" type="PackedScene" id=7]
+[ext_resource path="res://EyeAudio.tscn" type="PackedScene" id=8]
+[ext_resource path="res://audio/BGS14_EYE1.wav" type="AudioStream" id=9]
+[ext_resource path="res://EyeAudio.gd" type="Script" id=10]
+[ext_resource path="res://audio/BGS14_EYE3.wav" type="AudioStream" id=11]
+[ext_resource path="res://audio/BGS14_EYE4.wav" type="AudioStream" id=12]
+[ext_resource path="res://audio/BGS14_EYE5.wav" type="AudioStream" id=13]
+[ext_resource path="res://audio/BGS14_EYE6.wav" type="AudioStream" id=14]
 
 [node name="GameWorld" type="Node2D"]
 script = ExtResource( 1 )
@@ -37,3 +44,9 @@ tile_data = PoolIntArray( 262144, 0, 0 )
 [node name="City" parent="." instance=ExtResource( 7 )]
 cell_quadrant_size = 32
 
+[node name="EyeAudio" type="AudioStreamPlayer" parent="." instance=ExtResource( 8 )]
+stream = ExtResource( 9 )
+volume_db = -4.952
+mix_target = 2
+script = ExtResource( 10 )
+audioArray = [ ExtResource( 9 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ]

@@ -6,6 +6,8 @@ var dashing = false
 var center = Vector2(128,128)
 var sprite_rotation
 
+onready var cam = get_node("/root/GameWorld/Camera2D")
+
 func _ready():
     start()
 	

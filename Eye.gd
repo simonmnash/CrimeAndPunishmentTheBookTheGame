@@ -2,6 +2,7 @@ extends AnimatedSprite
 
 var rot_dir = PI/4
 var looking_vector = Vector2(100, 100)
+var has_spotted_alex = false
 
 func _ready():
 	pass
@@ -14,9 +15,10 @@ func _physics_process(delta):
 	var result = space_state.intersect_ray(global_position, global_position+looking_vector)
 	# Set the line length based on the result of the ray intersection.
 	if result:
-		if result.collider.name == "AlexanderCrimovich":
+		if result.collider.name == "AlexanderCrimovich" and has_spotted_alex == false:
 			get_parent().alexander_has_been_spotted_by(self)
 			print("Hit at point: ", result.position)
+			has_spotted_alex = true
 		$Line2D.points = [0,  result.position - position]
 	else:
 		$Line2D.points = [0,  looking_vector]
