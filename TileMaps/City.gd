@@ -6,10 +6,10 @@ func _ready():
 	# For testing purposes, we can create levels with randomized furniture.
 	if randomize_furniture:
 		
-		#APARTMENT, SUPER DENSE
-		for i in range(-100,100):
+		#CITY, LESS DENSE
+		for i in range(100,200):
 			for j in range(-20,30):
 				# Most tiles shouldn't be furniture.
 				if round(rand_range(0.0, 0.57)) > 0:
-					set_cell(i, j, randi()%20)
+					set_cell(i, j, randi()%8)
 				
