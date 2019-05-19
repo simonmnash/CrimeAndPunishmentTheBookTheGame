@@ -18,22 +18,24 @@
 [ext_resource path="res://sprites/furniture_tiles/Trashbin Orange.png" type="Texture" id=16]
 [ext_resource path="res://sprites/furniture_tiles/Trashbin Pink.png" type="Texture" id=17]
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=1]
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 8.09248, 6.89495 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 12.3467, 10 )
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 14.9141, 6.94946 )
 
-[sub_resource type="RectangleShape2D" id=6]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 15.5136, 7.3959 )
 
-[sub_resource type="RectangleShape2D" id=7]
+[sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 15.8134, 7.35825 )
+
+[sub_resource type="RectangleShape2D" id=7]
 
 [sub_resource type="RectangleShape2D" id=8]
 
@@ -42,14 +44,12 @@ extents = Vector2( 15.8134, 7.35825 )
 [sub_resource type="RectangleShape2D" id=10]
 
 [sub_resource type="RectangleShape2D" id=11]
-
-[sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 7.86924, 9.6358 )
 
-[sub_resource type="RectangleShape2D" id=13]
+[sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 10, 8.82005 )
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=13]
 extents = Vector2( 10, 12.4299 )
 
 [sub_resource type="RectangleShape2D" id=14]
@@ -72,7 +72,7 @@ texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BlueBed/StaticBody2D"]
 scale = Vector2( 1.52, 0.8 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
 [node name="GreenBed" type="Sprite" parent="."]
 editor/display_folded = true
@@ -83,7 +83,7 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GreenBed/StaticBody2D"]
 scale = Vector2( 1.88, 1 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
 [node name="PinkBed" type="Sprite" parent="."]
 editor/display_folded = true
@@ -94,7 +94,7 @@ texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PinkBed/StaticBody2D"]
 scale = Vector2( 1.56, 0.72 )
-shape = SubResource( 5 )
+shape = SubResource( 3 )
 
 [node name="OrangeBed" type="Sprite" parent="."]
 editor/display_folded = true
@@ -104,7 +104,7 @@ texture = ExtResource( 4 )
 [node name="StaticBody2D" type="StaticBody2D" parent="OrangeBed"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="OrangeBed/StaticBody2D"]
-shape = SubResource( 1 )
+shape = SubResource( 4 )
 
 [node name="OrangeBlueDresser" type="Sprite" parent="."]
 editor/display_folded = true
@@ -115,7 +115,7 @@ texture = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="OrangeBlueDresser/StaticBody2D"]
 scale = Vector2( 1, 1.96 )
-shape = SubResource( 6 )
+shape = SubResource( 5 )
 
 [node name="PinkYellowDresser" type="Sprite" parent="."]
 editor/display_folded = true
@@ -126,7 +126,7 @@ texture = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PinkYellowDresser/StaticBody2D"]
 scale = Vector2( 1, 2.2 )
-shape = SubResource( 7 )
+shape = SubResource( 6 )
 
 [node name="YellowPurpleDresser" type="Sprite" parent="."]
 editor/display_folded = true
@@ -137,7 +137,7 @@ texture = ExtResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YellowPurpleDresser/StaticBody2D"]
 scale = Vector2( 1.48, 1.64 )
-shape = SubResource( 8 )
+shape = SubResource( 7 )
 
 [node name="BlueOrangeStove" type="Sprite" parent="."]
 editor/display_folded = true
@@ -148,7 +148,7 @@ texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BlueOrangeStove/StaticBody2D"]
 scale = Vector2( 1.48, 1.6 )
-shape = SubResource( 9 )
+shape = SubResource( 8 )
 
 [node name="GreenPinkStove" type="Sprite" parent="."]
 editor/display_folded = true
@@ -159,7 +159,7 @@ texture = ExtResource( 9 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GreenPinkStove/StaticBody2D"]
 scale = Vector2( 1.52, 1.6 )
-shape = SubResource( 10 )
+shape = SubResource( 9 )
 
 [node name="YellowPurpleStove" type="Sprite" parent="."]
 editor/display_folded = true
@@ -170,7 +170,7 @@ texture = ExtResource( 10 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YellowPurpleStove/StaticBody2D"]
 scale = Vector2( 1.52, 1.64 )
-shape = SubResource( 11 )
+shape = SubResource( 10 )
 
 [node name="YellowPurplePhone" type="Sprite" parent="."]
 editor/display_folded = true
@@ -181,7 +181,7 @@ texture = ExtResource( 11 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YellowPurplePhone/StaticBody2D"]
 scale = Vector2( 1, 1.68 )
-shape = SubResource( 12 )
+shape = SubResource( 11 )
 
 [node name="PurpleGreenPhone" type="Sprite" parent="."]
 editor/display_folded = true
@@ -192,7 +192,7 @@ texture = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PurpleGreenPhone/StaticBody2D"]
 scale = Vector2( 0.839999, 1.54648 )
-shape = SubResource( 13 )
+shape = SubResource( 12 )
 
 [node name="YellowBluePhone" type="Sprite" parent="."]
 editor/display_folded = true
@@ -203,7 +203,7 @@ texture = ExtResource( 13 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YellowBluePhone/StaticBody2D"]
 scale = Vector2( 0.839999, 1.28 )
-shape = SubResource( 2 )
+shape = SubResource( 13 )
 
 [node name="BlueTrashBin" type="Sprite" parent="."]
 editor/display_folded = true
@@ -248,4 +248,3 @@ texture = ExtResource( 17 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PinkTrashBin/StaticBody2D"]
 scale = Vector2( 0.649279, 0.843182 )
 shape = SubResource( 17 )
-
