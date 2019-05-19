@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/BGS14_EYE5.wav-60010ddf4e0bda86301d11b39d26b171.sample"
+
+[deps]
+
+source_file="res://audio/BGS14_EYE5.wav"
+dest_files=[ "res://.import/BGS14_EYE5.wav-60010ddf4e0bda86301d11b39d26b171.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

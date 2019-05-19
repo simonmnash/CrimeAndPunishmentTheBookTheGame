@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/BGS14_haunted.wav-859e1e77eb60b73831b16ac4a588808b.sample"
+
+[deps]
+
+source_file="res://audio/BGS14_haunted.wav"
+dest_files=[ "res://.import/BGS14_haunted.wav-859e1e77eb60b73831b16ac4a588808b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

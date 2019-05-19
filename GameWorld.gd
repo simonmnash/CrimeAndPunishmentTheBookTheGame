@@ -15,3 +15,7 @@ func start_game_loss():
 # 
 func alexander_has_been_spotted_by(spotting_eye: AnimatedSprite):
 	$Camera2D.camera_speed += 1
+	randomize()
+	$EyeAudio.stream = $EyeAudio.audioArray[rand_range(0,5)]
+	$EyeAudio.play()
+	
