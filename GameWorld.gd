@@ -2,6 +2,7 @@ extends Node2D
 
 var base_eye_resource = load("res://Eye.tscn")
 
+
 func _ready():
 	#var new_eye = base_eye_resource.instance()
 	#self.add_child(new_eye)
