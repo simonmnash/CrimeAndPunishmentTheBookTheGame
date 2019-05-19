@@ -43,7 +43,6 @@ margin_right = 1156.21
 margin_bottom = 979.636
 rect_scale = Vector2( 0.9, 0.6 )
 texture_normal = ExtResource( 5 )
-
 [connection signal="pressed" from="CREDITS" to="." method="_on_CREDITS_pressed"]
 [connection signal="pressed" from="READ" to="." method="_on_READ_pressed"]
 [connection signal="pressed" from="Credits/CreditsRect" to="." method="_on_CreditsRect_pressed"]

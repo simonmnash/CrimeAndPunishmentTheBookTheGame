@@ -7,10 +7,10 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 1 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 2 ) ],
-"loop": true,
+"frames": [ ExtResource( 1 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": false,
 "name": "blink",
-"speed": 5.0
+"speed": 3.0
 } ]
 
 [node name="Eye" type="AnimatedSprite"]
@@ -26,3 +26,7 @@ texture_mode = 183980592
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
 
+[node name="Eyeblinker" type="Timer" parent="."]
+wait_time = 4.0
+autostart = true
+[connection signal="timeout" from="Eyeblinker" to="." method="_on_Eyeblinker_timeout"]

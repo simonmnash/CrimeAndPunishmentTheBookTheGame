@@ -38,4 +38,3 @@ cell_quadrant_size = 32
 audioArray = [ ExtResource( 8 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ]
 
 [node name="TETRIS!" parent="." instance=ExtResource( 13 )]
-
