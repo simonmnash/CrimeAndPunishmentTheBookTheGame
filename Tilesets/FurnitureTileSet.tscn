@@ -64,10 +64,8 @@ extents = Vector2( 10, 12.4299 )
 [sub_resource type="RectangleShape2D" id=17]
 
 [node name="FurnitureTileSet" type="Node2D"]
-editor/display_folded = true
 
 [node name="BlueBed" type="Sprite" parent="."]
-editor/display_folded = true
 visible = false
 texture = ExtResource( 1 )
 

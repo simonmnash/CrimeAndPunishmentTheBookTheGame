@@ -17,3 +17,9 @@ func _ready():
 			# to make sure most floorboards use the non-broken texture
 			set_cell(i, j, round(rand_range(2.0, 2.6)))
 
+	#GRASSY PARADISE
+	for i in range(200,10000):
+		for j in range(-20,30):
+			# hacky way to generate 0 five times as often as 1
+			# to make sure most floorboards use the non-broken texture
+			set_cell(i, j, round(rand_range(3.51, 6.49)))

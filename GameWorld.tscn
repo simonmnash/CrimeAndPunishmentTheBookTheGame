@@ -3,9 +3,9 @@
 [ext_resource path="res://GameWorld.gd" type="Script" id=1]
 [ext_resource path="res://TileMaps/Floor.tscn" type="PackedScene" id=2]
 [ext_resource path="res://AlexanderCrimovich.tscn" type="PackedScene" id=3]
-[ext_resource path="res://MainCamera.tscn" type="PackedScene" id=4]
-[ext_resource path="res://TileMaps/Furniture.tscn" type="PackedScene" id=5]
-[ext_resource path="res://TileMaps/City.tscn" type="PackedScene" id=6]
+[ext_resource path="res://TileMaps/Furniture.tscn" type="PackedScene" id=4]
+[ext_resource path="res://TileMaps/City.tscn" type="PackedScene" id=5]
+[ext_resource path="res://MainCamera.tscn" type="PackedScene" id=6]
 [ext_resource path="res://EyeAudio.tscn" type="PackedScene" id=7]
 [ext_resource path="res://audio/BGS14_EYE1.wav" type="AudioStream" id=8]
 [ext_resource path="res://audio/BGS14_EYE3.wav" type="AudioStream" id=9]
@@ -24,17 +24,16 @@ tile_data = PoolIntArray( 65535, 0, 0, 0, 1, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0,
 position = Vector2( 60.2608, 130.661 )
 speed = 0.7
 
-[node name="Camera2D" parent="." instance=ExtResource( 4 )]
-position = Vector2( -5.57904, 131.107 )
-
-[node name="Furniture" parent="." instance=ExtResource( 5 )]
+[node name="Furniture" parent="." instance=ExtResource( 4 )]
 tile_data = PoolIntArray( 262144, 0, 0 )
 
-[node name="City" parent="." instance=ExtResource( 6 )]
+[node name="City" parent="." instance=ExtResource( 5 )]
 cell_quadrant_size = 32
+
+[node name="Camera2D" parent="." instance=ExtResource( 6 )]
+position = Vector2( -5.57904, 131.107 )
 
 [node name="EyeAudio" parent="." instance=ExtResource( 7 )]
 audioArray = [ ExtResource( 8 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ]
 
 [node name="TETRIS!" parent="." instance=ExtResource( 13 )]
-
