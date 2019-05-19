@@ -1,0 +1,120 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://sprites/city_tiles/bridge.png" type="Texture" id=1]
+[ext_resource path="res://sprites/city_tiles/hedge.png" type="Texture" id=2]
+[ext_resource path="res://sprites/city_tiles/hedge_blue.png" type="Texture" id=3]
+[ext_resource path="res://sprites/city_tiles/hedge_yellow.png" type="Texture" id=4]
+[ext_resource path="res://sprites/city_tiles/kremlin.png" type="Texture" id=5]
+[ext_resource path="res://sprites/city_tiles/streetlamp.png" type="Texture" id=6]
+[ext_resource path="res://sprites/city_tiles/streetlamp_blue.png" type="Texture" id=7]
+[ext_resource path="res://sprites/city_tiles/streetlamp_pink.png" type="Texture" id=8]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 8.09248, 6.89495 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 12.3467, 10 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 15.5136, 7.3959 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 7.86924, 9.6358 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 10, 8.82005 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 10, 12.4299 )
+
+[node name="CityTileSet" type="Node2D"]
+
+[node name="Bridge" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Bridge"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bridge/StaticBody2D"]
+scale = Vector2( 1.52, 0.8 )
+shape = SubResource( 1 )
+
+[node name="Hedge" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Hedge"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hedge/StaticBody2D"]
+scale = Vector2( 1.52, 0.8 )
+shape = SubResource( 1 )
+
+[node name="HedgeBlue" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 3 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="HedgeBlue"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HedgeBlue/StaticBody2D"]
+scale = Vector2( 1.88, 1 )
+shape = SubResource( 2 )
+
+[node name="HedgeYellow" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="HedgeYellow"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HedgeYellow/StaticBody2D"]
+scale = Vector2( 1.56, 0.72 )
+shape = SubResource( 3 )
+
+[node name="Kremlin" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 5 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Kremlin"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kremlin/StaticBody2D"]
+scale = Vector2( 1, 1.96 )
+shape = SubResource( 5 )
+
+[node name="Streetlamp" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 6 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Streetlamp"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Streetlamp/StaticBody2D"]
+scale = Vector2( 1, 1.68 )
+shape = SubResource( 11 )
+
+[node name="StreetlampBlue" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 7 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="StreetlampBlue"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StreetlampBlue/StaticBody2D"]
+scale = Vector2( 0.839999, 1.54648 )
+shape = SubResource( 12 )
+
+[node name="StreetlampPink" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 8 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="StreetlampPink"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StreetlampPink/StaticBody2D"]
+scale = Vector2( 0.839999, 1.28 )
+shape = SubResource( 13 )
