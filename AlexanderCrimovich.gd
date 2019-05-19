@@ -57,3 +57,6 @@ func _process(delta):
 		self.dashing = false
 		$AnimatedSprite.rotation=0
 		$BloodSpray.hide()
+
+func _on_EyeCreationTimer_timeout():
+	get_parent().spawn_new_enemy_eye_ahead_of_player_location(self)
