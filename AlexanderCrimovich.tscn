@@ -5,12 +5,13 @@
 [ext_resource path="res://sprites/axe_1.png" type="Texture" id=3]
 [ext_resource path="res://sprites/axe_2.png" type="Texture" id=4]
 
-[sub_resource type="ParticlesMaterial" id=3]
+[sub_resource type="ParticlesMaterial" id=1]
 flag_disable_z = true
 spread = 180.0
 gravity = Vector3( 0, 0, 0 )
 initial_velocity = 1000.0
 initial_velocity_random = 1.0
+angular_velocity = 0.0
 angular_velocity_random = 0.1
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
@@ -18,7 +19,7 @@ angle = -178.4
 angle_random = 1.0
 scale = 0.5
 
-[sub_resource type="SpriteFrames" id=1]
+[sub_resource type="SpriteFrames" id=2]
 animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
@@ -26,7 +27,7 @@ animations = [ {
 "speed": 8.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 16, 16 )
 
 [node name="AlexanderCrimovich" type="KinematicBody2D"]
@@ -39,14 +40,15 @@ amount = 15
 lifetime = 0.25
 speed_scale = 0.5
 explosiveness = 1.0
-process_material = SubResource( 3 )
+process_material = SubResource( 1 )
 texture = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 2, 2 )
-frames = SubResource( 1 )
+frames = SubResource( 2 )
 animation = "axe_walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2( 0.720001, 0.709155 )
-shape = SubResource( 2 )
+shape = SubResource( 3 )
+

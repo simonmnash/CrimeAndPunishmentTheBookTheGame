@@ -1,8 +1,11 @@
 extends Node2D
 
+var base_eye_resource = load("res://Eye.tscn")
 
 func _ready():
-	pass # Replace with function body.
+	#var new_eye = base_eye_resource.instance()
+	#self.add_child(new_eye)
+	pass
 
 func start_game_loss():
 	#Placeholder for loss screen/restart

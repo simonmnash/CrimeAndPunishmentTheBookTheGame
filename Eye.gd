@@ -1,21 +1,20 @@
 extends AnimatedSprite
 
-var point_array = []
-# Called when the node enters the scene tree for the first time.
+# Declare member variables here. Examples:
+# var a = 2
+# var b = "text"
+var rot_dir = PI/2
+
 func _ready():
-	point_array = [position, $SightRay.get_collision_point()]
-	$SightLine.position = Vector2(-position.x, -position.y)
-	
+	#$Line2D.points = [global_position - position, global_position - position +Vector2(50, 50)]
 	pass
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	play()
-	
-	if $SightRay.is_colliding():
-		print(point_array)
-		point_array = [position, $SightRay.get_collision_point()-(position)]
-	
-	$SightLine.set_points(point_array)
-
-	
+func _physics_process(delta):
+	#$Line2D.rotate(rot_dir*delta)
+	var space_state = get_world_2d().direct_space_state
+	# use global coordinates, not local to node
+	var result = space_state.intersect_ray(global_position, global_position+Vector2(100, 100))
+	if result:
+		print("Hit at point: ", result.position)
+		$Line2D.points = (global_position, global_position+Vector2(100, 100))
+		$Line2D.show()
