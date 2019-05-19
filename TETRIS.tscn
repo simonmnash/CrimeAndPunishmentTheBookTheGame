@@ -1,3 +1,17 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://audio/BGS14_attacked.wav" type="AudioStream" id=1]
+[ext_resource path="res://TETRIS.gd" type="Script" id=2]
+[ext_resource path="res://Tetris2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Tetris3.tscn" type="PackedScene" id=4]
 
 [node name="TETRIS!" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
+volume_db = -2.476
+autoplay = true
+bus = "Tetris1"
+script = ExtResource( 2 )
+
+[node name="Tetris2" parent="." instance=ExtResource( 3 )]
+
+[node name="Tetris3" parent="." instance=ExtResource( 4 )]

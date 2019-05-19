@@ -12,7 +12,8 @@ func _ready():
     start()
 	
 func start():
-	position = center
+	#position = center
+	pass
 
 func _process(delta):
 	var velocity = Vector2()

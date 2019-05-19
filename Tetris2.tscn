@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://audio/BGS14_haunted.wav" type="AudioStream" id=1]
+
+[node name="Tetris2" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
+volume_db = -2.476
+autoplay = true
+bus = "Tetris2"

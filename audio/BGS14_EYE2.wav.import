@@ -12,7 +12,7 @@ dest_files=[ "res://.import/BGS14_EYE2.wav-43dc39d35b02081245e6b264b10727c9.samp
 [params]
 
 force/8_bit=false
-force/mono=false
+force/mono=true
 force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=true
