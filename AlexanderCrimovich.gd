@@ -58,5 +58,13 @@ func _process(delta):
 		$AnimatedSprite.rotation=0
 		$BloodSpray.hide()
 
+	#Change animation based on distance
+	if position.x > 1600 and $AnimatedSprite.animation == "axe_walk":
+		$AnimatedSprite.play("axelegs_walk")
+		
+	if position.x > 3200 and $AnimatedSprite.animation == "axelegs_walk":
+		$AnimatedSprite.play("alex_walk")
+
 func _on_EyeCreationTimer_timeout():
 	get_parent().spawn_new_enemy_eye_ahead_of_player_location(self)
+

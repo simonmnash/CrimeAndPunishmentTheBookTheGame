@@ -7,9 +7,10 @@ func _ready():
 	if randomize_furniture:
 		
 		#APARTMENT, SUPER DENSE
-		for i in range(-100,100):
+		for i in range(-100, 100):
 			for j in range(-20,30):
+				randomize()
 				# Most tiles shouldn't be furniture.
-				if round(rand_range(0.0, 0.57)) > 0:
+				if round(rand_range(0.0, (0.58 - (i*0.000025)))) > 0:
 					set_cell(i, j, randi()%20)
 				

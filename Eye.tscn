@@ -25,4 +25,3 @@ default_color = Color( 0.0745098, 0.603922, 0.184314, 1 )
 texture_mode = 183980592
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
-
