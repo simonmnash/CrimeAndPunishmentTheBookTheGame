@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Open Manhole.png-11b38a428d177d6200152f142eb1eb22.stex"
+path="res://.import/open_manhole.png-0631a0b4c155be9b3cabc4dac9fdda49.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/city_tiles/Open Manhole.png"
-dest_files=[ "res://.import/Open Manhole.png-11b38a428d177d6200152f142eb1eb22.stex" ]
+source_file="res://sprites/city_tiles/open_manhole.png"
+dest_files=[ "res://.import/open_manhole.png-0631a0b4c155be9b3cabc4dac9fdda49.stex" ]
 
 [params]
 

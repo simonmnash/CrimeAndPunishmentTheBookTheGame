@@ -12,5 +12,5 @@ func _ready():
 				# Most tiles shouldn't be furniture.
 				randomize()
 				if round(rand_range(0.0, (0.52 - ((i-100)*0.000025)))) > 0:
-					set_cell(i, j, randi()%11)
+					set_cell(i, j, randi()%17)
 				

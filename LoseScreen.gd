@@ -34,6 +34,9 @@ func _ready():
 	$Background/RussianText.text  = random_russian[random_index]
 	$Background/EnglishText.text = random_english[random_index]
 
+func _process(delta):
+	if Input.is_action_pressed("ui_cancel"):
+		get_tree().change_scene("res://GameWorld.tscn")
 
 func _on_Restart_pressed():
 	get_tree().change_scene("res://GameWorld.tscn")

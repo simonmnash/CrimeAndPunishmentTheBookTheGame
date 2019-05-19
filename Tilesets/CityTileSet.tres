@@ -1,33 +1,34 @@
-[gd_resource type="TileSet" load_steps=19 format=2]
+[gd_resource type="TileSet" load_steps=20 format=2]
 
 [ext_resource path="res://sprites/city_tiles/bridge.png" type="Texture" id=1]
 [ext_resource path="res://sprites/city_tiles/hedge.png" type="Texture" id=2]
 [ext_resource path="res://sprites/city_tiles/snow_orange.png" type="Texture" id=3]
-[ext_resource path="res://sprites/city_tiles/hedge_blue.png" type="Texture" id=4]
-[ext_resource path="res://sprites/city_tiles/hedge_yellow.png" type="Texture" id=5]
-[ext_resource path="res://sprites/city_tiles/kremlin.png" type="Texture" id=6]
-[ext_resource path="res://sprites/city_tiles/streetlamp.png" type="Texture" id=7]
-[ext_resource path="res://sprites/city_tiles/streetlamp_blue.png" type="Texture" id=8]
-[ext_resource path="res://sprites/city_tiles/streetlamp_pink.png" type="Texture" id=9]
-[ext_resource path="res://sprites/city_tiles/snow.png" type="Texture" id=10]
-[ext_resource path="res://sprites/city_tiles/snow_green.png" type="Texture" id=11]
+[ext_resource path="res://sprites/city_tiles/kremlin.png" type="Texture" id=4]
+[ext_resource path="res://sprites/city_tiles/open_manhole.png" type="Texture" id=5]
+[ext_resource path="res://sprites/city_tiles/hedge_blue.png" type="Texture" id=6]
+[ext_resource path="res://sprites/city_tiles/hedge_yellow.png" type="Texture" id=7]
+[ext_resource path="res://sprites/city_tiles/streetlamp.png" type="Texture" id=8]
+[ext_resource path="res://sprites/city_tiles/streetlamp_blue.png" type="Texture" id=9]
+[ext_resource path="res://sprites/city_tiles/streetlamp_pink.png" type="Texture" id=10]
+[ext_resource path="res://sprites/city_tiles/snow.png" type="Texture" id=11]
+[ext_resource path="res://sprites/city_tiles/snow_green.png" type="Texture" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 10, 5.90315 )
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 8.09248, 6.89495 )
-
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 12.3467, 10 )
-
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 15.5136, 7.3959 )
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 7.86924, 4.64671 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 8.09248, 6.89495 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 12.3467, 10 )
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 10, 4.99391 )
@@ -66,7 +67,7 @@ extents = Vector2( 10, 4.99391 )
 } ]
 1/z_index = 0
 2/name = "HedgeBlue"
-2/texture = ExtResource( 4 )
+2/texture = ExtResource( 6 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 0, 0, 32, 16 )
@@ -82,7 +83,7 @@ extents = Vector2( 10, 4.99391 )
 } ]
 2/z_index = 0
 3/name = "HedgeYellow"
-3/texture = ExtResource( 5 )
+3/texture = ExtResource( 7 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 0, 0, 32, 16 )
@@ -98,7 +99,7 @@ extents = Vector2( 10, 4.99391 )
 } ]
 3/z_index = 0
 4/name = "Kremlin"
-4/texture = ExtResource( 6 )
+4/texture = ExtResource( 4 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 0, 0, 32, 32 )
@@ -114,7 +115,7 @@ extents = Vector2( 10, 4.99391 )
 } ]
 4/z_index = 0
 5/name = "Streetlamp"
-5/texture = ExtResource( 7 )
+5/texture = ExtResource( 8 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 0, 0, 16, 32 )
@@ -130,7 +131,7 @@ extents = Vector2( 10, 4.99391 )
 } ]
 5/z_index = 0
 6/name = "StreetlampBlue"
-6/texture = ExtResource( 8 )
+6/texture = ExtResource( 9 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 0, 0, 16, 32 )
@@ -146,7 +147,7 @@ extents = Vector2( 10, 4.99391 )
 } ]
 6/z_index = 0
 7/name = "StreetlampPink"
-7/texture = ExtResource( 9 )
+7/texture = ExtResource( 10 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 0, 0, 16, 32 )
@@ -162,7 +163,7 @@ extents = Vector2( 10, 4.99391 )
 } ]
 7/z_index = 0
 8/name = "Snow"
-8/texture = ExtResource( 10 )
+8/texture = ExtResource( 11 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 0, 0, 16, 16 )
@@ -178,7 +179,7 @@ extents = Vector2( 10, 4.99391 )
 } ]
 8/z_index = 0
 9/name = "SnowGreen"
-9/texture = ExtResource( 11 )
+9/texture = ExtResource( 12 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 0, 0, 16, 16 )
@@ -209,3 +210,99 @@ extents = Vector2( 10, 4.99391 )
 "shape_transform": Transform2D( 0.839999, 0, 0, 1.28, 8, 8 )
 } ]
 10/z_index = 0
+11/name = "Kremlin2"
+11/texture = ExtResource( 4 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 32, 32 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 16, 16 )
+11/navigation_offset = Vector2( 16, 16 )
+11/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1.96, 16, 16 )
+} ]
+11/z_index = 0
+12/name = "Kremlin3"
+12/texture = ExtResource( 4 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 0, 32, 32 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 16, 16 )
+12/navigation_offset = Vector2( 16, 16 )
+12/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1.96, 16, 16 )
+} ]
+12/z_index = 0
+13/name = "Kremlin4"
+13/texture = ExtResource( 4 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 0, 0, 32, 32 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 16, 16 )
+13/navigation_offset = Vector2( 16, 16 )
+13/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1.96, 16, 16 )
+} ]
+13/z_index = 0
+14/name = "manhole"
+14/texture = ExtResource( 5 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 0, 0, 16, 16 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 8, 8 )
+14/navigation_offset = Vector2( 8, 8 )
+14/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1.68, 8, 8 )
+} ]
+14/z_index = 0
+15/name = "manhole2"
+15/texture = ExtResource( 5 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 0, 0, 16, 16 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 8, 8 )
+15/navigation_offset = Vector2( 8, 8 )
+15/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1.68, 8, 8 )
+} ]
+15/z_index = 0
+16/name = "manhole3"
+16/texture = ExtResource( 5 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 0, 0, 16, 16 )
+16/tile_mode = 0
+16/occluder_offset = Vector2( 8, 8 )
+16/navigation_offset = Vector2( 8, 8 )
+16/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1.68, 8, 8 )
+} ]
+16/z_index = 0
