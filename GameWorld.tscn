@@ -1,18 +1,19 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://GameWorld.gd" type="Script" id=1]
 [ext_resource path="res://TileMaps/Floor.tscn" type="PackedScene" id=2]
 [ext_resource path="res://AlexanderCrimovich.tscn" type="PackedScene" id=3]
 [ext_resource path="res://TileMaps/Furniture.tscn" type="PackedScene" id=4]
 [ext_resource path="res://TileMaps/City.tscn" type="PackedScene" id=5]
-[ext_resource path="res://MainCamera.tscn" type="PackedScene" id=6]
-[ext_resource path="res://EyeAudio.tscn" type="PackedScene" id=7]
-[ext_resource path="res://audio/BGS14_EYE1.wav" type="AudioStream" id=8]
-[ext_resource path="res://audio/BGS14_EYE3.wav" type="AudioStream" id=9]
-[ext_resource path="res://audio/BGS14_EYE4.wav" type="AudioStream" id=10]
-[ext_resource path="res://audio/BGS14_EYE5.wav" type="AudioStream" id=11]
-[ext_resource path="res://audio/BGS14_EYE6.wav" type="AudioStream" id=12]
-[ext_resource path="res://TETRIS.tscn" type="PackedScene" id=13]
+[ext_resource path="res://TileMaps/HedgeMap.tscn" type="PackedScene" id=6]
+[ext_resource path="res://MainCamera.tscn" type="PackedScene" id=7]
+[ext_resource path="res://EyeAudio.tscn" type="PackedScene" id=8]
+[ext_resource path="res://audio/BGS14_EYE1.wav" type="AudioStream" id=9]
+[ext_resource path="res://audio/BGS14_EYE3.wav" type="AudioStream" id=10]
+[ext_resource path="res://audio/BGS14_EYE4.wav" type="AudioStream" id=11]
+[ext_resource path="res://audio/BGS14_EYE5.wav" type="AudioStream" id=12]
+[ext_resource path="res://audio/BGS14_EYE6.wav" type="AudioStream" id=13]
+[ext_resource path="res://TETRIS.tscn" type="PackedScene" id=14]
 
 [node name="GameWorld" type="Node2D"]
 script = ExtResource( 1 )
@@ -30,10 +31,12 @@ tile_data = PoolIntArray( 262144, 0, 0 )
 [node name="City" parent="." instance=ExtResource( 5 )]
 cell_quadrant_size = 32
 
-[node name="Camera2D" parent="." instance=ExtResource( 6 )]
+[node name="HedgeMap" parent="." instance=ExtResource( 6 )]
+
+[node name="Camera2D" parent="." instance=ExtResource( 7 )]
 position = Vector2( -5.57904, 131.107 )
 
-[node name="EyeAudio" parent="." instance=ExtResource( 7 )]
-audioArray = [ ExtResource( 8 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ]
+[node name="EyeAudio" parent="." instance=ExtResource( 8 )]
+audioArray = [ ExtResource( 9 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ]
 
-[node name="TETRIS!" parent="." instance=ExtResource( 13 )]
+[node name="TETRIS!" parent="." instance=ExtResource( 14 )]
