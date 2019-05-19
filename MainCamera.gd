@@ -1,6 +1,6 @@
 extends Camera2D
 
-export var camera_speed = 50
+export var camera_speed = 30
 
 onready var player = get_parent().get_node("AlexanderCrimovich")
 

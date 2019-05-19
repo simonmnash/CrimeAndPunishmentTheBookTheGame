@@ -13,12 +13,14 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="EyeSprite" type="AnimatedSprite"]
+[node name="Eye" type="AnimatedSprite"]
 position = Vector2( 710.822, 351.179 )
 frames = SubResource( 1 )
 animation = "blink"
 script = ExtResource( 4 )
 
 [node name="Line2D" type="Line2D" parent="."]
+width = 1.0
+default_color = Color( 0.0745098, 0.603922, 0.184314, 1 )
 texture_mode = 183980592
 
