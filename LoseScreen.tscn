@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://LoseScreen.gd" type="Script" id=1]
 [ext_resource path="res://sprites/UI/Merriweather-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://sprites/UI/SpecialElite-Regular.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://sprites/UI/restart.png" type="Texture" id=4]
+[ext_resource path="res://Tetris2.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 2 )
@@ -48,4 +49,6 @@ margin_right = 506.0
 margin_bottom = 525.0
 texture_normal = ExtResource( 4 )
 
+[node name="Tetris2" parent="." instance=ExtResource( 5 )]
+bus = "Master"
 [connection signal="pressed" from="Restart" to="." method="_on_Restart_pressed"]

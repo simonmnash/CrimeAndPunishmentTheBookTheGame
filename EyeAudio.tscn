@@ -10,7 +10,8 @@
 
 [node name="EyeAudio" type="AudioStreamPlayer2D"]
 stream = ExtResource( 1 )
-volume_db = -4.952
+volume_db = 0.381
+bus = "Eye"
 script = ExtResource( 2 )
 audioArray = [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ]
 
