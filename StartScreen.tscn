@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://StartScreen.gd" type="Script" id=1]
 [ext_resource path="res://sprites/UI/titlescreen.png" type="Texture" id=2]
 [ext_resource path="res://sprites/UI/CREDITS.png" type="Texture" id=3]
 [ext_resource path="res://sprites/UI/READ.png" type="Texture" id=4]
 [ext_resource path="res://sprites/UI/Creditsnowall.png" type="Texture" id=5]
+[ext_resource path="res://Tetris2.tscn" type="PackedScene" id=6]
 
 [node name="StartScreen" type="Node2D"]
 script = ExtResource( 1 )
@@ -43,6 +44,9 @@ margin_right = 1156.21
 margin_bottom = 979.636
 rect_scale = Vector2( 0.9, 0.6 )
 texture_normal = ExtResource( 5 )
+
+[node name="Tetris2" parent="." instance=ExtResource( 6 )]
+bus = "Master"
 [connection signal="pressed" from="CREDITS" to="." method="_on_CREDITS_pressed"]
 [connection signal="pressed" from="READ" to="." method="_on_READ_pressed"]
 [connection signal="pressed" from="Credits/CreditsRect" to="." method="_on_CreditsRect_pressed"]

@@ -2,24 +2,24 @@
 
 [ext_resource path="res://AlexanderCrimovich.gd" type="Script" id=1]
 [ext_resource path="res://sprites/blood.png" type="Texture" id=2]
-[ext_resource path="res://sprites/axe_1.png" type="Texture" id=3]
-[ext_resource path="res://sprites/axe_2.png" type="Texture" id=4]
-[ext_resource path="res://sprites/axelegs/axelegs1.png" type="Texture" id=5]
-[ext_resource path="res://sprites/axelegs/axelegs2.png" type="Texture" id=6]
-[ext_resource path="res://sprites/axelegs/axelegs3.png" type="Texture" id=7]
-[ext_resource path="res://sprites/axelegs/axelegs4.png" type="Texture" id=8]
-[ext_resource path="res://sprites/axelegs/axelegs5.png" type="Texture" id=9]
-[ext_resource path="res://sprites/axelegs/axelegs6.png" type="Texture" id=10]
-[ext_resource path="res://sprites/axelegs/axelegs7.png" type="Texture" id=11]
-[ext_resource path="res://sprites/axelegs/axelegs8.png" type="Texture" id=12]
-[ext_resource path="res://sprites/alex/alex1.png" type="Texture" id=13]
-[ext_resource path="res://sprites/alex/alex2.png" type="Texture" id=14]
-[ext_resource path="res://sprites/alex/alex3.png" type="Texture" id=15]
-[ext_resource path="res://sprites/alex/alex4.png" type="Texture" id=16]
-[ext_resource path="res://sprites/alex/alex5.png" type="Texture" id=17]
-[ext_resource path="res://sprites/alex/alex6.png" type="Texture" id=18]
-[ext_resource path="res://sprites/alex/alex7.png" type="Texture" id=19]
-[ext_resource path="res://sprites/alex/alex8.png" type="Texture" id=20]
+[ext_resource path="res://sprites/alex/alex1.png" type="Texture" id=3]
+[ext_resource path="res://sprites/alex/alex2.png" type="Texture" id=4]
+[ext_resource path="res://sprites/alex/alex3.png" type="Texture" id=5]
+[ext_resource path="res://sprites/alex/alex4.png" type="Texture" id=6]
+[ext_resource path="res://sprites/alex/alex5.png" type="Texture" id=7]
+[ext_resource path="res://sprites/alex/alex6.png" type="Texture" id=8]
+[ext_resource path="res://sprites/alex/alex7.png" type="Texture" id=9]
+[ext_resource path="res://sprites/alex/alex8.png" type="Texture" id=10]
+[ext_resource path="res://sprites/axe_1.png" type="Texture" id=11]
+[ext_resource path="res://sprites/axe_2.png" type="Texture" id=12]
+[ext_resource path="res://sprites/axelegs/axelegs1.png" type="Texture" id=13]
+[ext_resource path="res://sprites/axelegs/axelegs2.png" type="Texture" id=14]
+[ext_resource path="res://sprites/axelegs/axelegs3.png" type="Texture" id=15]
+[ext_resource path="res://sprites/axelegs/axelegs4.png" type="Texture" id=16]
+[ext_resource path="res://sprites/axelegs/axelegs5.png" type="Texture" id=17]
+[ext_resource path="res://sprites/axelegs/axelegs6.png" type="Texture" id=18]
+[ext_resource path="res://sprites/axelegs/axelegs7.png" type="Texture" id=19]
+[ext_resource path="res://sprites/axelegs/axelegs8.png" type="Texture" id=20]
 
 [sub_resource type="ParticlesMaterial" id=1]
 flag_disable_z = true
@@ -37,19 +37,19 @@ scale = 0.5
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "alex_walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ) ],
 "loop": true,
 "name": "axe_walk",
 "speed": 8.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ],
-"loop": true,
-"name": "axelegs_walk",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ],
 "loop": true,
-"name": "alex_walk",
+"name": "axelegs_walk",
 "speed": 5.0
 } ]
 
@@ -72,7 +72,7 @@ texture = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
-animation = "axelegs_walk"
+animation = "axe_walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2( 0.4, 0.4 )

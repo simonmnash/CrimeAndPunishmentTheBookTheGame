@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://sprites/city_tiles/bridge.png" type="Texture" id=1]
 [ext_resource path="res://sprites/city_tiles/hedge.png" type="Texture" id=2]
@@ -8,6 +8,10 @@
 [ext_resource path="res://sprites/city_tiles/streetlamp.png" type="Texture" id=6]
 [ext_resource path="res://sprites/city_tiles/streetlamp_blue.png" type="Texture" id=7]
 [ext_resource path="res://sprites/city_tiles/streetlamp_pink.png" type="Texture" id=8]
+[ext_resource path="res://sprites/city_tiles/snow.png" type="Texture" id=9]
+[ext_resource path="res://sprites/city_tiles/snow_green.png" type="Texture" id=10]
+[ext_resource path="res://sprites/city_tiles/snow_orange.png" type="Texture" id=11]
+[ext_resource path="res://sprites/city_tiles/open_manhole.png" type="Texture" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -17,17 +21,17 @@ extents = Vector2( 8.09248, 6.89495 )
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 12.3467, 10 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 15.5136, 7.3959 )
 
-[sub_resource type="RectangleShape2D" id=11]
-extents = Vector2( 7.86924, 9.6358 )
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 7.86924, 4.64671 )
 
-[sub_resource type="RectangleShape2D" id=12]
-extents = Vector2( 10, 8.82005 )
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 10, 4.99391 )
 
-[sub_resource type="RectangleShape2D" id=13]
-extents = Vector2( 10, 12.4299 )
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 10, 5.90315 )
 
 [node name="CityTileSet" type="Node2D"]
 
@@ -76,7 +80,6 @@ scale = Vector2( 1.56, 0.72 )
 shape = SubResource( 3 )
 
 [node name="Kremlin" type="Sprite" parent="."]
-editor/display_folded = true
 visible = false
 texture = ExtResource( 5 )
 
@@ -84,7 +87,40 @@ texture = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Kremlin/StaticBody2D"]
 scale = Vector2( 1, 1.96 )
-shape = SubResource( 5 )
+shape = SubResource( 4 )
+
+[node name="Kremlin2" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 5 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Kremlin2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kremlin2/StaticBody2D"]
+scale = Vector2( 1, 1.96 )
+shape = SubResource( 4 )
+
+[node name="Kremlin3" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 5 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Kremlin3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kremlin3/StaticBody2D"]
+scale = Vector2( 1, 1.96 )
+shape = SubResource( 4 )
+
+[node name="Kremlin4" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 5 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Kremlin4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kremlin4/StaticBody2D"]
+scale = Vector2( 1, 1.96 )
+shape = SubResource( 4 )
 
 [node name="Streetlamp" type="Sprite" parent="."]
 editor/display_folded = true
@@ -95,7 +131,7 @@ texture = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Streetlamp/StaticBody2D"]
 scale = Vector2( 1, 1.68 )
-shape = SubResource( 11 )
+shape = SubResource( 5 )
 
 [node name="StreetlampBlue" type="Sprite" parent="."]
 editor/display_folded = true
@@ -106,7 +142,7 @@ texture = ExtResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StreetlampBlue/StaticBody2D"]
 scale = Vector2( 0.839999, 1.54648 )
-shape = SubResource( 12 )
+shape = SubResource( 6 )
 
 [node name="StreetlampPink" type="Sprite" parent="."]
 editor/display_folded = true
@@ -117,4 +153,70 @@ texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StreetlampPink/StaticBody2D"]
 scale = Vector2( 0.839999, 1.28 )
-shape = SubResource( 13 )
+shape = SubResource( 7 )
+
+[node name="Snow" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 9 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Snow"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Snow/StaticBody2D"]
+scale = Vector2( 1, 1.68 )
+shape = SubResource( 5 )
+
+[node name="SnowGreen" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 10 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="SnowGreen"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SnowGreen/StaticBody2D"]
+scale = Vector2( 0.839999, 1.54648 )
+shape = SubResource( 6 )
+
+[node name="SnowOrange" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 11 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="SnowOrange"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SnowOrange/StaticBody2D"]
+scale = Vector2( 0.839999, 1.28 )
+shape = SubResource( 7 )
+
+[node name="manhole" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 12 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="manhole"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="manhole/StaticBody2D"]
+scale = Vector2( 1, 1.68 )
+shape = SubResource( 5 )
+
+[node name="manhole2" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 12 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="manhole2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="manhole2/StaticBody2D"]
+scale = Vector2( 1, 1.68 )
+shape = SubResource( 5 )
+
+[node name="manhole3" type="Sprite" parent="."]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 12 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="manhole3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="manhole3/StaticBody2D"]
+scale = Vector2( 1, 1.68 )
+shape = SubResource( 5 )
